@@ -16,97 +16,113 @@
                     <img src="ressources/images/logo/Reservia@3x.png" width="100px" alt="logo">
                 </div>
                 <ul>
-                    <li>Hébergements</li>
-                    <li>Activités</li>
-                    <li>S'inscrire</li>
+                    <li><a href=""> Hébergements</a></li>
+                    <li><a href=""> Activités</a></li>
+                    <li><a href="">S'inscrire</a></li>
                 </ul>
             </div>
             <div id="header-text">
-                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
             <!-- icone locate -->
             <input type="text" name="search-bar" id="search-bar" placeholder="Marseille, France">
             <input type="button" value="Rechercher">
-            <h2>Filtres</h2>
-            <ul>
-                <li>Économique</li>
-                <li>Familial</li>
-                <li>Romantique</li>
-                <li>Animaux autorisés</li>
-            </ul>
+            <div id="filters">
+                <h4>Filtres</h4>
+                <ul>
+                    <li>
+                        <h4><a href="#">Économique</a></h4>
+                    </li>
+                    <li>
+                        <h4><a href="#">Familial</a></h4>
+                    </li>
+                    <li>
+                        <h4><a href="#">Romantique</a></h4>
+                    </li>
+                    <li>
+                        <h4><a href="#">Animaux autorisés</a></h4>
+                    </li>
+                </ul>
+            </div>
             <!-- icone infos-->
             <p> Plus de 500 logements sont disponibles dans cette ville</p>
         </header>
-        <div id="bloc-search-result">
-            <h2>Hébergements à Marseille</h2>
-            <figure class="result">
-                <img src="" alt="" class="">
-                <figcaption class="legende">
-                    <h4></h4>
-                    <p></p>
-                </figcaption>
-            </figure>
-            <figure class="result">
-                <img src="" alt="" class="">
-                <figcaption class="legende">
-                    <h4></h4>
-                    <p>Nuit à partir de €</p>
-                </figcaption>
-            </figure>
-            <figure class="result">
-                <img src="" alt="" class="">
-                <figcaption class="legende">
-                    <h4></h4>
-                    <p>Nuit à partir de €</p>
-                </figcaption>
-            </figure>
-            <figure class="result">
-                <img src="" alt="" class="">
-                <figcaption class="legende">
-                    <h4></h4>
-                    <p>Nuit à partir de €</p>
-                </figcaption>
-            </figure>
-            <figure class="result">
-                <img src="" alt="" class="">
-                <figcaption class="legende">
-                    <h4></h4>
-                    <p>Nuit à partir de €</p>
-                </figcaption>
-            </figure>
-            <figure class="result">
-                <img src="" alt="" class="">
-                <figcaption class="legende">
-                    <h4></h4>
-                    <p>Nuit à partir de €</p>
-                </figcaption>
-            </figure>
-            <h2>Afficher plus</h2>
-        </div>
-        <div id="bloc-famous-result">
-            <h2>Les plus populaires</h2> <!-- logo graph-->
-            <figure class="famous-result">
-                <img src="" alt="" class="">
-                <figcaption class="legende">
-                    <h4>Hôtel Le soleil du matin</h4>
-                    <p>Nuit à partir de €</p>
-                </figcaption>
-            </figure>
-            <figure class="famous-result">
-                <img src="" alt="" class="">
-                <figcaption class="legende">
-                    <h4>Au coeur de l'eau Chambres d'hôtes</h4>
-                    <p>Nuit à partir de €</p>
-                </figcaption>
-            </figure>
-            <figure class="famous-result">
-                <img src="" alt="" class="">
-                <figcaption class="legende">
-                    <h4>Hôtel Tout bleu et Blanc</h4>
-                    <p>Nuit à partir de €</p>
-                </figcaption>
-            </figure>
+        <div id="container-result">
+            <div id="search-result">
+                <h2>Hébergements à Marseille</h2>
+                <div id="grid1">
+                    <figure class="result">
+                        <img src="" alt="" class="">
+                        <figcaption class="legende">
+                            <h4></h4>
+                            <p>Nuit à partir de €</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="result">
+                        <img src="" alt="" class="">
+                        <figcaption class="legende">
+                            <h4></h4>
+                            <p>Nuit à partir de €</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="result">
+                        <img src="" alt="" class="">
+                        <figcaption class="legende">
+                            <h4></h4>
+                            <p>Nuit à partir de €</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="result">
+                        <img src="" alt="" class="">
+                        <figcaption class="legende">
+                            <h4></h4>
+                            <p>Nuit à partir de €</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="result">
+                        <img src="" alt="" class="">
+                        <figcaption class="legende">
+                            <h4></h4>
+                            <p>Nuit à partir de €</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="result">
+                        <img src="" alt="" class="">
+                        <figcaption class="legende">
+                            <h4></h4>
+                            <p>Nuit à partir de €</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h4>Afficher plus</h4>
+            </div>
+            <div id="famous-result">
+                <h2>Les plus populaires</h2> <!-- logo graph-->
+                <div id="grid2">
+                    <figure class="famous-result">
+                        <img src="" alt="" class="">
+                        <figcaption class="legende">
+                            <h4>Hôtel Le soleil du matin</h4>
+                            <p>Nuit à partir de €</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="famous-result">
+                        <img src="" alt="" class="">
+                        <figcaption class="legende">
+                            <h4>Au coeur de l'eau Chambres d'hôtes</h4>
+                            <p>Nuit à partir de €</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="famous-result">
+                        <img src="" alt="" class="">
+                        <figcaption class="legende">
+                            <h4>Hôtel Tout bleu et Blanc</h4>
+                            <p>Nuit à partir de €</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
         </div>
         <div id="activities">
             <h2>Activités à Marseille</h2>
@@ -147,21 +163,23 @@
                 </figcaption>
             </figure>
         </div>
-        <footer>
-            <ul>A propos
-                <li>Fonctionnement du site</li>
-                <li>Condition générales de vente</li>
-                <li>Données et confidentialité</li>
-            </ul>
-            <ul>Nos Hébergements
-                <li>Charte qualité</li>
-                <li>Soumettre votre hôtel</li>
-            </ul>
-            <ul>Assitance
-                <li>Centre d'aide</li>
-                <li>Nous contacter</li>
-            </ul>
-        </footer>
+    </div>
+    
+    <footer>
+        <ul>A propos
+            <li>Fonctionnement du site</li>
+            <li>Condition générales de vente</li>
+            <li>Données et confidentialité</li>
+        </ul>
+        <ul>Nos Hébergements
+            <li>Charte qualité</li>
+            <li>Soumettre votre hôtel</li>
+        </ul>
+        <ul>Assitance
+            <li>Centre d'aide</li>
+            <li>Nous contacter</li>
+        </ul>
+    </footer>
     </div>
 </body>
 

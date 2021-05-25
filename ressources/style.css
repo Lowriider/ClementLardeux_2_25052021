@@ -5,9 +5,43 @@
     display: flex;
     justify-content: space-between;
 }
+#filters {
+    display:flex;
+}
 #logo {
     display: inline-flex;
 }
 #menu ul li  {
     display:inline-block;
+    justify-content: space-between;
+    padding-left: 80px;
+}
+#menu ul li a:hover {
+    border-top:2px solid blue;
+    padding-top: 20px;
+}
+#filters ul li {
+    display:inline-block;
+    justify-content: space-between;
+    padding-left: 50px;
+}
+#container-result {
+    display: flex;
+    justify-content: space-between;
+}
+#grid1 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+#search-result, #famous-result {
+    background-color: gray;
+}
+a {
+    text-decoration: none;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
 }
