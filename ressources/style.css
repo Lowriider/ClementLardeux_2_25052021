@@ -30,6 +30,7 @@ body {
 #search-bar {
     padding: 8px 0px 8px 0px;
     border: 1px solid #F2F2F2;
+    font-weight: bold;
 
 }
 #button-search {
@@ -40,6 +41,20 @@ body {
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
 }
+#infos {
+    display: inline-flex;
+}
+.fa-info {
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #F2F2F2;
+    border-radius: 50px;
+    margin: auto;
+    color: #0065FC;
+}
+#infos p {
+    margin-left: 10px;
+}
 #icone {
     background-color: #F2F2F2;
     padding: 10px 15px 10px 15px;
@@ -47,15 +62,25 @@ body {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
 }
+
 #filters ul li {
-    display:inline-block;
+    display:inline-flex;
     justify-content: space-between;
-    padding: 0px 25px 0px 25px;
     border-radius: 30px;
-    height: 30px;
-}
-#filters li{
     border: 2px solid #F2F2F2;
+    margin: auto;
+}
+#filters ul li a {
+ margin: 7px 10px;
+
+}
+#filters ul li i {
+    color: #0065FC;
+    padding: 9px 11px 9px 11px;
+    border: none;
+    background-color: #DEEBFF ;
+    border-radius: 50px;
+    margin: auto;
 }
 #container-result {
     display: flex;
