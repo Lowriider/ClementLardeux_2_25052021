@@ -25,23 +25,26 @@
                 <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
-            <!-- icone locate -->
-            <input type="text" name="search-bar" id="search-bar" placeholder="Marseille, France">
-            <input type="button" value="Rechercher">
+            <div id="search-box">
+                <!-- icone locate -->
+                <div id="icone"></div>
+                <input type="text" name="search-bar" id="search-bar" placeholder="Marseille, France">
+                <input type="button" id="button-search" value="Rechercher">
+            </div>
             <div id="filters">
                 <h4>Filtres</h4>
                 <ul>
                     <li>
-                        <h4><a href="#">Économique</a></h4>
+                        <a href="#">Économique</a>
                     </li>
                     <li>
-                        <h4><a href="#">Familial</a></h4>
+                        <a href="#">Familial</a>
                     </li>
                     <li>
-                        <h4><a href="#">Romantique</a></h4>
+                        <a href="#">Romantique</a>
                     </li>
                     <li>
-                        <h4><a href="#">Animaux autorisés</a></h4>
+                        <a href="#">Animaux autorisés</a>
                     </li>
                 </ul>
             </div>
@@ -50,17 +53,17 @@
         </header>
         <div id="container-result">
             <div id="search-result">
-                <h2>Hébergements à Marseille</h2>
+                <h4>Hébergements à Marseille</h4>
                 <div id="grid1">
                     <figure class="result">
-                        <img src="" alt="" class="">
+                        <img src="ressources/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"  height="110px" alt="" class="">
                         <figcaption class="legende">
                             <h4></h4>
                             <p>Nuit à partir de €</p>
                         </figcaption>
                     </figure>
                     <figure class="result">
-                        <img src="" alt="" class="">
+                        <img src="ressources/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"   height="110px" alt="" class="">
                         <figcaption class="legende">
                             <h4></h4>
                             <p>Nuit à partir de €</p>
@@ -98,7 +101,7 @@
                 <h4>Afficher plus</h4>
             </div>
             <div id="famous-result">
-                <h2>Les plus populaires</h2> <!-- logo graph-->
+                <h4>Les plus populaires</h4> <!-- logo graph-->
                 <div id="grid2">
                     <figure class="famous-result">
                         <img src="" alt="" class="">
@@ -164,7 +167,7 @@
             </figure>
         </div>
     </div>
-    
+    </div>
     <footer>
         <ul>A propos
             <li>Fonctionnement du site</li>
@@ -180,7 +183,6 @@
             <li>Nous contacter</li>
         </ul>
     </footer>
-    </div>
 </body>
 
 </html>

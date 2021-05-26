@@ -1,7 +1,11 @@
+body {
+    margin: 0;
+}
 #container {
     margin: 0 50 0 50;
 }
 #menu {
+    padding-top: 50px;
     display: flex;
     justify-content: space-between;
 }
@@ -17,13 +21,41 @@
     padding-left: 80px;
 }
 #menu ul li a:hover {
-    border-top:2px solid blue;
-    padding-top: 20px;
+    border-top:2px solid #0065FC;
+    padding-top: 22px;
+}
+#search-box {
+    display: flex;
+}
+#search-bar {
+    padding: 8px 0px 8px 0px;
+    border: 1px solid #F2F2F2;
+
+}
+#button-search {
+    background-color: #0065FC;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    border: none;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+#icone {
+    background-color: #F2F2F2;
+    padding: 10px 15px 10px 15px;
+    border: none;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
 }
 #filters ul li {
     display:inline-block;
     justify-content: space-between;
-    padding-left: 50px;
+    padding: 0px 25px 0px 25px;
+    border-radius: 30px;
+    height: 30px;
+}
+#filters li{
+    border: 2px solid #F2F2F2;
 }
 #container-result {
     display: flex;
@@ -35,7 +67,26 @@
     
 }
 #search-result, #famous-result {
-    background-color: gray;
+    background-color: #F2F2F2;
+    border-radius: 25px;
+}
+#famous-result {
+    justify-content: center;
+}
+.result, .famous-result {
+    width: 250px;
+    height: 190px;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.116);
+}
+.result{
+    padding-top: 5px ;
+}
+.result img {
+    z-index: 500;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 a {
     text-decoration: none;
@@ -43,5 +94,5 @@ a {
 footer {
     display: flex;
     justify-content: space-between;
-    background-color: gray;
+    background-color: #F2F2F2;
 }
