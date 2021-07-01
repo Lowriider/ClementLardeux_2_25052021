@@ -15,7 +15,7 @@ input[type='text'],
 input[type="button"] {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    font-size: 16;
+    font-size: 16px;
 }
 
 #container {
@@ -39,7 +39,7 @@ input[type="button"] {
 }
 
 .fa-star {
-    font-size: 13;
+    font-size: 13px;
 }
 
 .blue {
@@ -62,7 +62,9 @@ input[type="button"] {
 #logo {
     display: inline-flex;
 }
-
+#logo img {
+    width: 100px;
+}
 a {
     text-decoration: none;
 }
@@ -114,7 +116,7 @@ a {
 #result-title h4,
 #activities-title h4,
 .fa-chart-line {
-    font-size: 22;
+    font-size: 22px;
 }
 
 #header-text h3 {
@@ -344,12 +346,12 @@ a {
 .famous-result .legende p:nth-child(1),
 .result .legende p:nth-child(1) {
     font-weight: bold;
-    font-size: 15;
+    font-size: 15px;
 }
 
 .famous-result .legende p,
 .result .legende p {
-    font-size: 13;
+    font-size: 13px;
 }
 
 .famous-result .legende p:nth-child(2) {
@@ -479,7 +481,7 @@ footer ul li:first-child {
 /*            RESPONSIVE           */
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
     #container {
-        margin: 0 40 0 40;
+        margin: 0px 40px 0px 40px;
     }
 
     #grid1 {
@@ -492,7 +494,7 @@ footer ul li:first-child {
     #search-result {
         width: auto;
         margin: 0px 10px 0px 0px;
-        padding: 0 20;
+        padding: 0px 20px;
     }
 
     .result {
@@ -500,14 +502,8 @@ footer ul li:first-child {
     }
 
     .famous-result {
-        margin: 0 30 10 30;
+        margin: 0px 30px 10px 30px;
     }
-
-    /* .famous-result img {
-        width: 240;
-        border-bottom-left-radius: 0px;
-        border-top-right-radius: 25px;
-    } */
 
     #activities {
         justify-content: center;
@@ -580,7 +576,7 @@ footer ul li:first-child {
     }
 
     #header-text h3 {
-        font-size: 20;
+        font-size: 20px;
     }
 
     #search-box {
