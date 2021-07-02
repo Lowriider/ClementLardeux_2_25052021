@@ -11,6 +11,10 @@ body {
     margin: 0;
 }
 
+footer {
+    overflow-x: hidden;
+}
+
 input[type='text'],
 input[type="button"] {
     font-family: 'Raleway', sans-serif;
@@ -20,7 +24,7 @@ input[type="button"] {
 
 #container {
     max-width: 1340px;
-    margin: auto;
+    margin: 0px 50px;
 }
 
 #register a,
@@ -62,9 +66,11 @@ input[type="button"] {
 #logo {
     display: inline-flex;
 }
+
 #logo img {
     width: 100px;
 }
+
 a {
     text-decoration: none;
 }
@@ -201,6 +207,7 @@ a {
     padding-left: 30px;
 }
 
+
 #filters ul li {
     display: inline-flex;
     justify-content: space-between;
@@ -209,8 +216,7 @@ a {
     margin: auto;
     margin-left: 15px;
     align-items: center;
-    /* padding-top: 5px;
-    padding-bottom: 5px; */
+    margin-top: 13px;
 
 }
 
@@ -247,7 +253,7 @@ a {
 #container-result {
     max-width: 1340px;
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -328,12 +334,13 @@ a {
 
 .famous-result img {
     width: 127px;
-    height: 140px;
+    height: 135px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
 }
 
 .famous-result .img-crop {
+    height: 135px;
     padding: 5px;
     overflow: hidden;
 }
@@ -356,7 +363,7 @@ a {
 
 .famous-result .legende p:nth-child(2) {
     margin-top: 10px;
-    margin-bottom: 43px;
+    margin-bottom: 33px;
 }
 
 .famous-result .legende {
@@ -477,61 +484,113 @@ footer ul li:first-child {
     margin-bottom: 15px;
 }
 
-
 /*            RESPONSIVE           */
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
+
+@media screen and (min-width:1441px) {
+    #container {
+        margin: auto;
+    }
+}
+@media screen and (min-width:1100px) and (max-width:1280px){
+    #famous-result {
+        width: 100%;
+    }
+    #search-result {
+        width: auto;
+        margin-bottom: 30px;
+        padding: 45px 110px;
+    }
+    #activities {
+        margin: 0px 190px;
+    }
+    .col,
+    .col-double-1,
+    .col-double-2 {
+        display: flex;
+        flex-direction: column;
+        height: 445px;
+        margin-bottom: 30px;
+    }
+    #footer-lists {
+        padding: 0px 50px;
+        margin: 0;
+    }
+}
+@media screen and (min-width: 993px) and (max-width: 1024px) {
     #container {
         margin: 0px 40px 0px 40px;
     }
 
-    #grid1 {
-        display: grid;
-        grid-template-columns: repeat(3, 0fr);
-        justify-content: center;
-        padding-top: 15px;
-    }
-
     #search-result {
         width: auto;
-        margin: 0px 10px 0px 0px;
-        padding: 0px 20px;
+        margin-bottom: 30px;
     }
 
     .result {
         margin: 8px 5px;
     }
 
+    #famous-result {
+        width: 100%;
+        padding: 45px 40px 35px 40px;
+    }
+
     .famous-result {
-        margin: 0px 30px 10px 30px;
+        margin: 33px 30px 10px 30px;
     }
 
     #activities {
-        justify-content: center;
-        flex-wrap: wrap;
+        margin:0px 150px;
     }
 
-    .city-activities {
-        width: 250px;
-    }
-
-    .city-activities .img-crop {
-        width: 250px;
-    }
-
-    .city-activities img {
-        width: 250px;
-    }
-
+    .col,
     .col-double-1,
     .col-double-2 {
-        padding-right: 0px;
+        display: flex;
+        flex-direction: column;
+        height: 445px;
+        margin-bottom: 30px;
     }
-
+    
+    #footer-lists {
+        padding: 0px 50px;
+        margin: 0;
+    }
 }
 
-@media screen and (max-width: 480px) {}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    
+    #famous-result {
+        width: 100%;
+    }
+    
+    #search-result {
+        background-color: white;
+    }
+    
+    #footer-lists ul {
+        margin-right: 0%;
+    }
+    #footer-lists {
+        padding: 0px 50px;
+        margin: 0;
+    }
+    .col,
+    .col-double-1,
+    .col-double-2 {
+        display: flex;
+        flex-direction: column;
+        height: 445px;
+        margin-bottom: 30px;
+    }
+    
+}
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
+    #container {
+        margin: 0;
+    }
+
     header {
         margin: 0px 20px;
     }
@@ -563,11 +622,11 @@ footer ul li:first-child {
     }
 
     #menu-group a:first-child {
-        padding: 0px 40px 18px 40px;
+        padding: 0px 60px 18px 60px;
     }
 
     #menu-group a:last-child {
-        padding: 0px 60px 18px 60px;
+        padding: 0px 70px 18px 60px;
     }
 
     #menu-group a:active {
@@ -580,11 +639,11 @@ footer ul li:first-child {
     }
 
     #search-box {
-        width: 335px;
+        width: 400px;
     }
 
     #search-bar {
-        width: 245px;
+        width: 350px;
     }
 
     #button-search {
@@ -626,22 +685,26 @@ footer ul li:first-child {
         padding-left: 0;
     }
 
-    #filters ul li {
-        margin-top: 13px;
-        margin-left: 0;
-    }
-
     #filters ul li a {
         padding-right: 10px;
     }
 
-    #search-result {
-        background-color: white;
+    #container-result {
+        width: 425px;
+        flex-wrap: wrap-reverse;
+    }
+
+    #famous-result {
+        width: 425px;
     }
 
     #famous-result,
     #search-result {
-        padding: 45px 20px 35px 20px;
+        padding: 45px 40px 35px 40px;
+    }
+
+    #search-result {
+        background-color: white;
     }
 
     .famous-result,
@@ -650,7 +713,7 @@ footer ul li:first-child {
     }
 
     .famous-result img {
-        height: 145px;
+        height: 145px !important;
     }
 
     .result img {
@@ -692,7 +755,7 @@ footer ul li:first-child {
     .col .city-activities img,
     .city-activities img,
     .city-activities .img-crop {
-        height: 140px;
+        height: 140px !important;
         width: 335px;
     }
 
@@ -716,6 +779,38 @@ footer ul li:first-child {
     }
 }
 
+@media screen and (max-width: 380px) {
+    #container {
+        margin: 0;
+    }
+
+    #menu-group a:first-child {
+        padding: 0px 40px 18px 40px;
+    }
+
+    #menu-group a:last-child {
+        padding: 0px 60px 18px 60px;
+    }
+
+    #search-box {
+        width: 345px;
+    }
+
+    #search-bar {
+        width: 255px;
+    }
+
+    #container-result {
+        width: 375px;
+    }
+
+    #famous-result,
+    #search-result {
+        padding: 45px 20px 35px 20px;
+    }
+
+}
+
 @media screen and (max-width: 320px) {
 
     #menu-group a:first-child {
@@ -726,13 +821,27 @@ footer ul li:first-child {
         padding: 0px 40px 18px 45px;
     }
 
+    #container-result {
+        width: unset;
+    }
+    .famous-result .img-crop {
+        height: 135px!important;
+    }
+    .famous-result img {
+        height: 135px!important;
+    }
+    .famous-result .legende p:nth-child(2) {
+        margin-bottom: 16px;
+    }
+    .result img {
+        width: 290px;
+    }
     #search-box,
     .famous-result,
     .city-activities,
     .result,
     .city-activities img,
     .col .city-activities img,
-    .result img,
     .city-activities .img-crop,
     .col .city-activities .img-crop,
     .col,
