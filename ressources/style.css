@@ -491,6 +491,7 @@ footer ul li:first-child {
         margin: auto;
     }
 }
+
 @media screen and (min-width:1100px) and (max-width:1280px){
     #famous-result {
         width: 100%;
@@ -516,6 +517,7 @@ footer ul li:first-child {
         margin: 0;
     }
 }
+
 @media screen and (min-width: 993px) and (max-width: 1024px) {
     #container {
         margin: 0px 40px 0px 40px;
@@ -711,11 +713,6 @@ footer ul li:first-child {
     .result {
         width: 335px;
     }
-
-    .famous-result img {
-        height: 145px !important;
-    }
-
     .result img {
         width: 325px;
         height: 115px;
@@ -734,11 +731,10 @@ footer ul li:first-child {
         flex-wrap: unset;
         align-items: center;
     }
-
-    #activities-container h4 {
-        margin-left: 20px;
+    #activities-container {
+        padding: 45px 40px 35px 40px;
     }
-
+   
     .col,
     .col-double-1,
     .col-double-2 {
@@ -770,7 +766,7 @@ footer ul li:first-child {
 
     #footer-lists ul {
         margin-right: 0;
-        margin-left: 30px;
+        margin-left: 50px;
         padding: 50px 0px 0px 0px;
     }
 
@@ -808,6 +804,9 @@ footer ul li:first-child {
     #search-result {
         padding: 45px 20px 35px 20px;
     }
+    #footer-lists ul {
+        margin-left: 20px;
+    }
 
 }
 
@@ -824,10 +823,7 @@ footer ul li:first-child {
     #container-result {
         width: unset;
     }
-    .famous-result .img-crop {
-        height: 135px!important;
-    }
-    .famous-result img {
+    .famous-result .img-crop,.famous-result img {
         height: 135px!important;
     }
     .famous-result .legende p:nth-child(2) {
