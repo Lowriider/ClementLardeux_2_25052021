@@ -637,10 +637,6 @@ footer ul li:first-child {
         color: #0065FC;
         border-bottom: 2px solid #0065FC;
     }
-    
-    #header-text h3 {
-        font-size: 20px;
-    }
 
     #search-box, #search-bar {
         width: 100%;
