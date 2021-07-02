@@ -694,7 +694,9 @@ footer ul li:first-child {
         width: 100%;
         flex-wrap: wrap-reverse;
     }
-
+    #grid1 {
+        justify-content: center;
+    }
     #famous-result {
         width: 100%;
     }
@@ -710,10 +712,10 @@ footer ul li:first-child {
 
     .famous-result,
     .result {
-        width: 335px;
+        width: 100%;
     }
     .result img {
-        width: 325px;
+        width: 100%;
         height: 115px;
     }
 
@@ -739,11 +741,11 @@ footer ul li:first-child {
     .col-double-2 {
         height: unset;
         padding: 0;
-        width: 335px;
+        width: 100%;
     }
 
     .city-activities {
-        width: 335px;
+        width: 100%;
         margin: 12px 0px;
     }
 
@@ -751,7 +753,7 @@ footer ul li:first-child {
     .city-activities img,
     .city-activities .img-crop {
         height: 140px !important;
-        width: 335px;
+        width: 100%;
     }
 
     .col-double-1 .city-activities:first-child,
@@ -774,43 +776,27 @@ footer ul li:first-child {
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (min-width: 381px) and (max-width:425px) {
     #container {
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         margin: 0;
     }
 
     #menu-group a:first-child {
-        padding: 0px 40px 18px 40px;
+        padding: 0px 60px 18px 40px;
     }
 
     #menu-group a:last-child {
-        padding: 0px 60px 18px 60px;
+        padding: 0px 70px 18px 60px;
     }
 
-    #search-box {
-        width: 345px;
-    }
-
-    #search-bar {
-        width: 255px;
-    }
-
-    #container-result {
-        width: 375px;
-    }
-
-    #famous-result,
-    #search-result {
-        padding: 45px 20px 35px 20px;
-    }
     #footer-lists ul {
         margin-left: 20px;
     }
 
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) and (max-width:380px){
 
     #menu-group a:first-child {
         padding: 0px 30px 18px 30px;
@@ -832,7 +818,7 @@ footer ul li:first-child {
     .result img {
         width: 290px;
     }
-    #search-box,
+    
     .famous-result,
     .city-activities,
     .result,
