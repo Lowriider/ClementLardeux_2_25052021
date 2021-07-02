@@ -702,8 +702,8 @@ footer ul li:first-child {
     }
 
     #famous-result,
-    #search-result {
-        padding: 45px 40px 35px 40px;
+    #search-result,#activities-container {
+        padding: 45px 20px 35px 20px;
     }
 
     #search-result {
@@ -732,10 +732,7 @@ footer ul li:first-child {
         flex-wrap: unset;
         align-items: center;
     }
-    #activities-container {
-        padding: 45px 40px 35px 40px;
-    }
-   
+    
     .col,
     .col-double-1,
     .col-double-2 {
@@ -776,7 +773,7 @@ footer ul li:first-child {
     }
 }
 
-@media screen and (min-width: 381px) and (max-width:425px) {
+@media screen and (max-width: 380px) {
     #container {
         /* overflow-x: hidden; */
         margin: 0;
@@ -796,7 +793,7 @@ footer ul li:first-child {
 
 }
 
-@media screen and (min-width: 320px) and (max-width:380px){
+@media screen and (max-width: 320px){
 
     #menu-group a:first-child {
         padding: 0px 30px 18px 30px;
