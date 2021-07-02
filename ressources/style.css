@@ -685,7 +685,9 @@ footer ul li:first-child {
     #filters ul {
         padding-left: 0;
     }
-
+    #filters ul li {
+        margin-left: 0;
+    }
     #filters ul li a {
         padding-right: 10px;
     }
