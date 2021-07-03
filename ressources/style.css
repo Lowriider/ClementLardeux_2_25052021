@@ -607,7 +607,7 @@ footer ul li:first-child {
 }
 
 @media screen and (min-width: 730px) and (max-width: 992px) {
-
+  
     #famous-result {
         width: 100%;
     }
@@ -645,11 +645,17 @@ footer ul li:first-child {
 
 }
 
-@media screen and (min-width:590px) and (max-width: 729px) {
+@media screen and (min-width:690px) and (max-width: 729px) {
+    #search-result {
+        background-color: white;
+    }
+
     #famous-result {
         width: 100%;
     }
-
+    #activities {
+        padding: 45px 100px 35px 100px;
+    }
     .col,
     .col-double-1,
     .col-double-2 {
@@ -691,7 +697,82 @@ footer ul li:first-child {
 
 }
 
+@media screen and (min-width:590px) and (max-width:689px) {
+    #menu ul {
+        flex-direction: column;
+    }
+    #grid1 {
+        justify-content: center;
+    }
+    #search-result {
+        background-color: white;
+    }
+    .result {
+        width: 345px;
+    }
+    .result img {
+        width:335px;
+    }
+    #famous-result {
+        width: 100%;
+    }
+    #activities {
+        padding: 45px 100px 35px 100px;
+    }
+    .col,
+    .col-double-1,
+    .col-double-2 {
+        height: unset;
+        padding: 0;
+        width: 100%;
+    }
+
+    .city-activities {
+        width: 100%;
+        margin: 12px 0px;
+    }
+
+    .col .city-activities img,
+    .city-activities img,
+    .city-activities .img-crop {
+        height: 140px !important;
+        width: 100%;
+    }
+
+    .col-double-1 .city-activities:first-child,
+    .col-double-2 .city-activities:first-child {
+        margin-bottom: unset;
+    }
+
+    #footer-lists {
+        flex-direction: column;
+    }
+
+    #footer-lists ul {
+        margin-right: 0;
+        margin-left: 50px;
+        padding: 50px 0px 0px 0px;
+    }
+
+    #footer-lists ul:last-child {
+        padding-bottom: 50px;
+    }
+}
+
 @media screen and (min-width:481px) and (max-width: 589px) {
+    #menu ul {
+        flex-direction: column;
+    }
+    #grid1 {
+        justify-content: center;
+    }
+    .result {
+        width: 345px;
+    }
+    .result img {
+        width:335px;
+    }
+    
     #search-result {
         padding: 45px 0px;
     }
@@ -865,12 +946,6 @@ footer ul li:first-child {
         width: 100%;
     }
 
-    #famous-result,
-    #search-result,
-    #activities-container {
-        padding: 45px 40px 35px 40px;
-    }
-
     #search-result {
         background-color: white;
     }
@@ -953,7 +1028,10 @@ footer ul li:first-child {
     #menu-group a:last-child {
         padding: 0px 70px 18px 60px;
     }
-
+    .famous-result .legende {
+        padding: 18px 40px 15px 20px;
+        margin: 0;
+    }
     #famous-result,
     #search-result,
     #activities-container {
