@@ -963,12 +963,12 @@ footer ul li:first-child {
     #show-more {
         padding: 0px 10px;
     }
-
+    #activities-container {
+        margin: 65px 40px 60px 40px;
+    }
+    
     #activities {
         justify-content: center;
-    }
-
-    #activities {
         flex-direction: column;
         flex-wrap: unset;
         align-items: center;
@@ -1031,6 +1031,9 @@ footer ul li:first-child {
     .famous-result .legende {
         padding: 18px 40px 15px 20px;
         margin: 0;
+    }
+    #activities-container {
+        margin:0;
     }
     #famous-result,
     #search-result,
