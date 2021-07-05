@@ -5,7 +5,6 @@
     margin: 0;
 }
 
-
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -81,8 +80,6 @@ a {
     padding-right: 20px;
 }
 
-
-
 #menu-links a:hover {
     border-top: 2px solid #0065FC;
     padding-top: 62px;
@@ -96,7 +93,6 @@ a {
 #menu-links a:visited {
     color: #000;
 } 
-
 
 #register a {
     color: #0065fc !important;
@@ -121,7 +117,6 @@ a {
 
 /*            BAR RECHERCHE           */
 
-
 #search-box {
     display: flex;
     height: 50px;
@@ -145,7 +140,6 @@ a {
     align-items: center;
     border: 1px solid #F2F2F2;
     font-weight: bold;
-
 }
 
 #button-search {
@@ -178,9 +172,6 @@ a {
     margin-top: 5px;
 }
 
-
-
-
 /*            FILTRES           */
 
 
@@ -199,7 +190,6 @@ a {
     padding-left: 30px;
 }
 
-
 #filters ul li {
     display: inline-flex;
     justify-content: space-between;
@@ -209,7 +199,6 @@ a {
     margin-left: 15px;
     align-items: center;
     margin-top: 13px;
-
 }
 
 #filters ul li a {
@@ -232,7 +221,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 #filters ul li i {
@@ -275,7 +263,6 @@ a {
 }
 
 #search-result {
-
     width: 880px;
     padding: 45px 40px;
     box-sizing: border-box;
@@ -377,7 +364,6 @@ a {
 #activities-container {
     margin-top: 65px;
     margin-bottom: 60px;
-
 }
 
 #activities-title {
@@ -423,7 +409,6 @@ a {
     height: 180px;
 }
 
-
 .city-activities .img-crop {
     width: 305px;
     overflow: hidden;
@@ -453,7 +438,6 @@ a {
 }
 
 /*            FOOTER           */
-
 
 footer {
     background-color: #F2F2F2;
@@ -546,7 +530,7 @@ footer ul li:first-child {
     }
 
     #activities {
-        margin: 0px 0px;
+        margin: 0px 200px;
         justify-content: center;
     }
 
@@ -597,9 +581,6 @@ footer ul li:first-child {
     .col,
     .col-double-1,
     .col-double-2 {
-        display: flex;
-        flex-direction: column;
-        height: 445px;
         margin-bottom: 30px;
     }
 
