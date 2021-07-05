@@ -17,17 +17,19 @@
                 <div id="logo">
                     <img src="ressources/images/logo/Reservia@3x.png" alt="logo">
                 </div>
-                <ul>
+                <!-- <ul>
                     <li><a href="#search-result"> Hébergements</a></li>
                     <li><a href="#activities"> Activités</a></li>
                     <li><a href="">S'inscrire</a></li>
-                </ul>
-                <div id="register">
-                    <a href="">S'inscrire</a>
-                </div>
-                <div id="menu-group">
-                    <a href="#search-result"> Hébergements</a>
-                    <a href="#activities"> Activités</a>
+                </ul> -->
+                <div id="menu-lists">
+                    <div id="menu-links">
+                        <a href="#search-result"> Hébergements</a>
+                        <a href="#activities"> Activités</a>
+                    </div>
+                    <div id="register">
+                        <a href="#">S'inscrire</a>
+                    </div>
                 </div>
             </nav>
             <div id="header-text">
@@ -65,7 +67,7 @@
             </div>
         </header>
         <section id="container-result">
-            <section id="search-result">
+            <div id="search-result">
                 <div id="result-title">
                     <h4>Hébergements à Marseille</h4>
                 </div>
@@ -74,7 +76,7 @@
                         <figure class="result">
                             <div class="img-crop">
                                 <img src="ressources/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                                    alt="">
+                                    alt="Auberge de la Cannebière">
                             </div>
                             <figcaption class="legende">
                                 <p>Auberge de la Cannebière</p>
@@ -89,7 +91,7 @@
                         <figure class="result">
                             <div class="img-crop">
                                 <img src="ressources/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                                    alt="" class="">
+                                    alt="Hôtel du port">
                             </div>
                             <figcaption class="legende">
                                 <p>Hôtel du port</p>
@@ -104,7 +106,7 @@
                         <figure class="result">
                             <div class="img-crop">
                                 <img src="ressources/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                                    alt="">
+                                    alt="Hôtel Les mouettes">
                             </div>
                             <figcaption class="legende">
                                 <p>Hôtel Les mouettes</p>
@@ -119,7 +121,7 @@
                         <figure class="result">
                             <div class="img-crop">
                                 <img src="ressources/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-                                    alt="" class="">
+                                    alt="Hôtel de la mer">
                             </div>
                             <figcaption class="legende">
                                 <p>Hôtel de la mer</p>
@@ -134,7 +136,7 @@
                         <figure class="result">
                             <div class="img-crop">
                                 <img src="ressources/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-                                    alt="">
+                                    alt="Auberge Le Panier">
                             </div>
                             <figcaption class="legende">
                                 <p>Auberge Le Panier</p>
@@ -149,7 +151,7 @@
                         <figure class="result">
                             <div class="img-crop">
                                 <img src="ressources/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-                                    alt="">
+                                    alt="Hôtel chez Amina">
                             </div>
                             <figcaption class="legende">
                                 <p>Hôtel chez Amina</p>
@@ -164,8 +166,8 @@
                 <div id="show-more">
                     <h4>Afficher plus</h4>
                 </div>
-            </section>
-            <section id="famous-result">
+            </div>
+            <div id="famous-result">
                 <div id="famous-title">
                     <h4>Les plus populaires</h4> <i class="fas fa-chart-line"></i>
                 </div>
@@ -174,7 +176,7 @@
                         <figure class="famous-result">
                             <div class="img-crop">
                                 <img src="ressources/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                                    alt="" class="">
+                                    alt="Hôtel Le soleil du matin">
                             </div>
                             <figcaption class="legende">
                                 <p>Hôtel Le soleil du matin</p>
@@ -189,7 +191,7 @@
                         <figure class="famous-result">
                             <div class="img-crop">
                                 <img src="ressources/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                                    alt="" class="">
+                                    alt="Au coeur de l'eau Chambres d'hôtes">
                             </div>
                             <figcaption class="legende">
                                 <p>Au coeur de l'eau Chambres d'hôtes</p>
@@ -204,7 +206,7 @@
                         <figure class="famous-result">
                             <div class="img-crop">
                                 <img src="ressources/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                                    alt="">
+                                    alt="Hôtel Tout bleu et Blanc">
                             </div>
                             <figcaption class="legende">
                                 <p>Hôtel Tout bleu et Blanc</p>
@@ -216,7 +218,7 @@
                         </figure>
                     </a>
                 </div>
-            </section>
+            </div>
         </section>
         <section id="activities-container">
             <div id="activities-title">
@@ -224,78 +226,78 @@
             </div>
             <div id="activities">
                 <div class="col">
-                    <figure class="city-activities">
-                        <a href="#">
+                    <a href="#">
+                        <figure class="city-activities">
                             <div class="img-crop">
                                 <img src="ressources/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                                    alt="" class="">
+                                    alt="Vieux port">
                             </div>
                             <figcaption class="legende">
                                 <h4>Vieux port</h4>
                             </figcaption>
-                        </a>
-                    </figure>
+                        </figure>
+                    </a>
                 </div>
                 <div class="col-double-1">
-                    <figure class="city-activities">
-                        <a href="#">
+                    <a href="#">
+                        <figure class="city-activities">
                             <div class="img-crop">
                                 <img src="ressources/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                                    alt="" class="">
+                                    alt="Fort de Pomègues">
                             </div>
                             <figcaption class="legende">
                                 <h4>Fort de Pomègues</h4>
                             </figcaption>
-                        </a>
-                    </figure>
-                    <figure class="city-activities">
-                        <a href="#">
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure class="city-activities">
                             <div class="img-crop">
                                 <img src="ressources/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                                    alt="" class="">
+                                    alt="Iles du Frioul">
                             </div>
                             <figcaption class="legende">
                                 <h4>Iles du Frioul</h4>
                             </figcaption>
-                        </a>
-                    </figure>
+                        </figure>
+                    </a>
                 </div>
                 <div class="col">
-                    <figure class="city-activities">
-                        <a href="#">
+                    <a href="#">
+                        <figure class="city-activities">
                             <div class="img-crop">
                                 <img src="ressources/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                                    alt="" class="">
+                                    alt="Parc National des Calanques">
                             </div>
                             <figcaption class="legende">
                                 <h4>Parc National des Calanques</h4>
                             </figcaption>
-                        </a>
-                    </figure>
+                        </figure>
+                    </a>
                 </div>
                 <div class="col-double-2">
-                    <figure class="city-activities">
-                        <a href="#">
+                    <a href="#">
+                        <figure class="city-activities">
                             <div class="img-crop">
                                 <img src="ressources/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                                    alt="" class="">
+                                    alt="Notre-Dame-de-la-Garde">
                             </div>
                             <figcaption class="legende">
                                 <h4>Notre-Dame-de-la-Garde</h4>
                             </figcaption>
-                        </a>
-                    </figure>
-                    <figure class="city-activities">
-                        <a href="#">
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure class="city-activities">
                             <div class="img-crop">
                                 <img src="ressources/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                                    alt="" class="">
+                                    alt="Parc Longchamp">
                             </div>
                             <figcaption class="legende">
                                 <h4>Parc Longchamp</h4>
                             </figcaption>
-                        </a>
-                    </figure>
+                        </figure>
+                    </a>
                 </div>
             </div>
         </section>

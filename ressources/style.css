@@ -27,10 +27,6 @@ input[type="button"] {
     margin: 0px 50px;
 }
 
-#register a,
-#menu-group a,
-#register,
-#menu-group,
 .fa-search,
 #search-icon {
     display: none;
@@ -74,40 +70,34 @@ input[type="button"] {
 a {
     text-decoration: none;
 }
-
-#menu ul {
+#menu-lists {
     display: flex;
     flex-wrap: wrap-reverse;
-    justify-content: flex-end;
-
 }
-
-#menu ul li {
-    display: inline-block;
-    padding-left: 60px;
+#menu-links a:last-child{
+    padding: 0px 70px 0px 70px;
+}
+#register a{
     padding-right: 20px;
-
 }
 
-#menu ul li a {
-    color: black;
-}
 
-#menu ul li a:hover {
+
+#menu-links a:hover {
     border-top: 2px solid #0065FC;
     padding-top: 62px;
     color: #0065FC !important;
 }
 
-#menu ul li a:active {
+#menu-links a:active {
     color: #0065FC;
 }
 
-#menu ul li a:visited {
+#menu-links a:visited {
     color: #000;
-}
+} 
 
-#menu ul li:last-child a,
+
 #register a {
     color: #0065fc !important;
     font-weight: bold !important;
@@ -230,7 +220,7 @@ a {
 }
 
 #filters ul li a:hover {
-    font-size: 20px;
+    color: #0065FC;
 }
 
 #filters ul li div {
@@ -272,7 +262,7 @@ a {
     align-items: center;
 }
 #search-result a,
-#famous-result a, .city-activities a{
+#famous-result a, #activities a{
     color: black;
 }
 .result .fa-star {
@@ -417,21 +407,22 @@ a {
     height: 390px;
 }
 
-.col-double-1 .city-activities:last-child img {
+.col-double-1 a:last-child img {
     height: 110px;
 }
 
-.col-double-2 .city-activities:last-child img {
+.col-double-2 a:last-child img {
     height: 150px;
 }
 
-.col-double-2 .city-activities:first-child img {
+.col-double-2 a:first-child img {
     height: 140px;
 }
 
-.col-double-1 .city-activities:first-child img {
+.col-double-1 a:first-child img {
     height: 180px;
 }
+
 
 .city-activities .img-crop {
     width: 305px;
@@ -446,18 +437,18 @@ a {
     height: 445px;
 }
 
-.col-double-1 .city-activities:first-child,
-.col-double-2 .city-activities:first-child {
+.col-double-1 a:first-child,
+.col-double-2 a:first-child {
     margin-bottom: 20px;
 }
 
-.col-double-1 .city-activities:last-child,
-.col-double-2 .city-activities:last-child {
+.col-double-1 a:last-child,
+.col-double-2 a:last-child {
     margin-top: 20px;
 }
 
 .city-activities .legende {
-    margin: 20px 20px;
+    padding: 20px 20px;
     font-weight: bold;
 }
 
@@ -530,39 +521,8 @@ footer ul li:first-child {
     }
 }
 
-@media screen and (min-width:1025px) and (max-width:1280px) {
-    #famous-result {
-        width: 100%;
-    }
 
-    #search-result {
-        width: auto;
-        margin-bottom: 30px;
-        padding: 45px 110px;
-    }
-
-    #activities {
-        margin: 0px 150px;
-        justify-content: center;
-    }
-
-    .col {
-        margin-right: 30px;
-    }
-
-    .col,
-    .col-double-1,
-    .col-double-2 {
-        margin-bottom: 30px;
-    }
-
-    #footer-lists {
-        padding: 0px 50px;
-        margin: 0;
-    }
-}
-
-@media screen and (min-width: 993px) and (max-width: 1024px) {
+@media screen and (min-width: 993px) and (max-width: 1280px) {
     #container {
         margin: 0px 40px 0px 40px;
     }
@@ -606,7 +566,7 @@ footer ul li:first-child {
     }
 }
 
-@media screen and (min-width: 730px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px)  {
   
     #famous-result {
         width: 100%;
@@ -645,16 +605,20 @@ footer ul li:first-child {
 
 }
 
-@media screen and (min-width:690px) and (max-width: 729px) {
+
+@media screen and  (min-width: 500px) and (max-width: 767px) {
     #search-result {
         background-color: white;
     }
 
-    #famous-result {
+    #famous-result, #search-result a {
+        width: 100%;
+    }
+    .result, .result img  {
         width: 100%;
     }
     #activities {
-        padding: 45px 100px 35px 100px;
+        padding: 45px 50px 35px 50px;
     }
     .col,
     .col-double-1,
@@ -662,6 +626,7 @@ footer ul li:first-child {
         height: unset;
         padding: 0;
         width: 100%;
+        margin: 0;
     }
 
     .city-activities {
@@ -674,147 +639,18 @@ footer ul li:first-child {
     .city-activities .img-crop {
         height: 140px !important;
         width: 100%;
+        margin: 0;
     }
 
-    .col-double-1 .city-activities:first-child,
-    .col-double-2 .city-activities:first-child {
+    .col-double-1 a:first-child,
+    .col-double-2 a:first-child {
         margin-bottom: unset;
     }
-
-    #footer-lists {
-        flex-direction: column;
-    }
-
-    #footer-lists ul {
-        margin-right: 0;
-        margin-left: 50px;
-        padding: 50px 0px 0px 0px;
-    }
-
-    #footer-lists ul:last-child {
-        padding-bottom: 50px;
-    }
-
-}
-
-@media screen and (min-width:590px) and (max-width:689px) {
-    #menu ul {
-        flex-direction: column;
-    }
-    #grid1 {
-        justify-content: center;
-    }
-    #search-result {
-        background-color: white;
-    }
-    .result {
-        width: 345px;
-    }
-    .result img {
-        width:335px;
-    }
-    #famous-result {
-        width: 100%;
-    }
-    #activities {
-        padding: 45px 100px 35px 100px;
-    }
-    .col,
-    .col-double-1,
-    .col-double-2 {
-        height: unset;
-        padding: 0;
-        width: 100%;
-    }
-
-    .city-activities {
-        width: 100%;
-        margin: 12px 0px;
-    }
-
-    .col .city-activities img,
-    .city-activities img,
-    .city-activities .img-crop {
-        height: 140px !important;
-        width: 100%;
-    }
-
-    .col-double-1 .city-activities:first-child,
-    .col-double-2 .city-activities:first-child {
-        margin-bottom: unset;
-    }
-
-    #footer-lists {
-        flex-direction: column;
-    }
-
-    #footer-lists ul {
-        margin-right: 0;
-        margin-left: 50px;
-        padding: 50px 0px 0px 0px;
-    }
-
-    #footer-lists ul:last-child {
-        padding-bottom: 50px;
-    }
-}
-
-@media screen and (min-width:481px) and (max-width: 589px) {
-    #menu ul {
-        flex-direction: column;
-    }
-    #grid1 {
-        justify-content: center;
-    }
-    .result {
-        width: 345px;
-    }
-    .result img {
-        width:335px;
+    .col-double-1 a:last-child,
+    .col-double-2 a:last-child {
+        margin-top: unset;
     }
     
-    #search-result {
-        padding: 45px 0px;
-    }
-
-    #famous-result {
-        width: 100%;
-    }
-
-    #search-result {
-        background-color: white;
-        width: auto;
-        margin-bottom: 30px;
-    }
-
-    #footer-lists ul {
-        margin-right: 0%;
-    }
-
-    .col,
-    .col-double-1,
-    .col-double-2 {
-        height: unset;
-        padding: 0;
-        width: 100%;
-    }
-
-    .city-activities {
-        width: 100%;
-        margin: 12px 0px;
-    }
-
-    .col .city-activities img,
-    .city-activities img,
-    .city-activities .img-crop {
-        height: 140px !important;
-        width: 100%;
-    }
-
-    .col-double-1 .city-activities:first-child,
-    .col-double-2 .city-activities:first-child {
-        margin-bottom: unset;
-    }
 
     #footer-lists {
         flex-direction: column;
@@ -829,7 +665,8 @@ footer ul li:first-child {
     #footer-lists ul:last-child {
         padding-bottom: 50px;
     }
-}
+
+}  
 
 @media screen and (max-width: 480px) {
     #container {
@@ -840,43 +677,53 @@ footer ul li:first-child {
     header {
         margin: 0px 20px;
     }
-
     #menu {
         flex-wrap: wrap;
         padding: 30px 0px;
     }
-
-    #menu ul {
-        display: none;
+    #register a {
+        padding-right: 0;
+    }
+    #register {
+        position: relative;
+        top:-28px;
+        left:75%
     }
 
+    #menu-links a{
+        color:black
+    }
+    #search-result a, #famous-result a, .city-activities a {
+        width: 100%;
+    }
     #register a,
-    #menu-group a,
+    #menu-links a,
     #register,
-    #menu-group {
+    #menu-links {
         display: flex;
     }
 
-    #menu-group {
+    #menu-links {
         width: 100%;
-        padding-top: 40px;
+        padding-top: 30px;
         margin: 0px -20px;
     }
 
-    #menu-group a {
+    #menu-links a {
         border-bottom: 2px solid #F2F2F2;
     }
 
-    #menu-group a:first-child {
+    #menu-links a:first-child {
         padding: 0px 60px 18px 60px;
     }
 
-    #menu-group a:last-child {
+    #menu-links a:last-child {
         padding: 0px 70px 18px 60px;
     }
 
-    #menu-group a:active {
+    #menu-links a:hover {
         color: #0065FC;
+        border-top:unset;
         border-bottom: 2px solid #0065FC;
     }
 
@@ -994,9 +841,13 @@ footer ul li:first-child {
         width: 100%;
     }
 
-    .col-double-1 .city-activities:first-child,
-    .col-double-2 .city-activities:first-child {
+    .col-double-1 a:first-child,
+    .col-double-2 a:first-child {
         margin-bottom: unset;
+    }
+    .col-double-1 a:last-child,
+    .col-double-2 a:last-child {
+        margin-top: unset;
     }
 
     #footer-lists {
@@ -1016,16 +867,19 @@ footer ul li:first-child {
 }
 
 @media screen and (max-width: 380px) {
+
     #container {
         /* overflow-x: hidden; */
         margin: 0;
     }
-
-    #menu-group a:first-child {
+    #search-result a, #famous-result a, .city-activities a {
+        width: 100%;
+    }
+    #menu-links a:first-child {
         padding: 0px 45px 18px 40px;
     }
 
-    #menu-group a:last-child {
+    #menu-links a:last-child {
         padding: 0px 70px 18px 60px;
     }
     .famous-result .legende {
@@ -1049,11 +903,11 @@ footer ul li:first-child {
 
 @media screen and (max-width: 320px) {
 
-    #menu-group a:first-child {
+    #menu-links a:first-child {
         padding: 0px 30px 18px 30px;
     }
 
-    #menu-group a:last-child {
+    #menu-links a:last-child {
         padding: 0px 40px 18px 45px;
     }
 
